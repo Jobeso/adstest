@@ -23,4 +23,6 @@ target 'Facebattle' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/GLog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+  pod 'RNGlispaConnect', :path => '../node_modules/react-native-glispa-connect/ios'
+
 end

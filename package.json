@@ -4,11 +4,15 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "run:ios:device": "react-native run-ios --device 'Testiphone7'",
+    "run:ios": "react-native run-ios",
+    "run:packager": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
   "dependencies": {
     "react": "^16.3.0-alpha.1",
-    "react-native": "0.54.0"
+    "react-native": "0.54.0",
+    "react-native-glispa-connect": "../react-native-glispa-connect"
   },
   "devDependencies": {
     "babel-jest": "22.4.1",

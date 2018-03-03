@@ -1,11 +1,64 @@
 PODS:
+  - AppLovinSDK (4.8.3)
+  - avocarrot-ios-sdk/Core (4.8.0)
+  - avocarrot-ios-sdk/CoreAdapters/FBAudienceAdapter (4.8.0):
+    - avocarrot-ios-sdk/Core
+    - FBAudienceNetwork (~> 4.24)
+  - avocarrot-ios-sdk/CoreAdapters/GoogleMobileAdsAdapter (4.8.0):
+    - avocarrot-ios-sdk/Core
+    - Google-Mobile-Ads-SDK (~> 7.21)
+  - avocarrot-ios-sdk/CoreAdapters/InLocoAdapter (4.8.0):
+    - avocarrot-ios-sdk/Core
+    - InLocoMedia-Ads-SDK (~> 2.4)
+  - avocarrot-ios-sdk/CoreAdapters/MopubAdapter (4.8.0):
+    - avocarrot-ios-sdk/Core
+    - mopub-ios-sdk/Core (~> 4.13)
+  - avocarrot-ios-sdk/NativeAssets (4.8.0):
+    - avocarrot-ios-sdk/Core
+  - avocarrot-ios-sdk/NativeView (4.8.0):
+    - avocarrot-ios-sdk/Core
+    - avocarrot-ios-sdk/NativeAssets
+    - avocarrot-ios-sdk/Vast
+  - avocarrot-ios-sdk/NativeViewAdapters (4.8.0):
+    - avocarrot-ios-sdk/NativeViewAdapters/AppLovinAdapter (= 4.8.0)
+    - avocarrot-ios-sdk/NativeViewAdapters/FBAudienceAdapter (= 4.8.0)
+    - avocarrot-ios-sdk/NativeViewAdapters/GoogleMobileAdsAdapter (= 4.8.0)
+    - avocarrot-ios-sdk/NativeViewAdapters/InLocoAdapter (= 4.8.0)
+    - avocarrot-ios-sdk/NativeViewAdapters/MopubAdapter (= 4.8.0)
+  - avocarrot-ios-sdk/NativeViewAdapters/AppLovinAdapter (4.8.0):
+    - AppLovinSDK (~> 4.6)
+    - avocarrot-ios-sdk/NativeView
+  - avocarrot-ios-sdk/NativeViewAdapters/FBAudienceAdapter (4.8.0):
+    - avocarrot-ios-sdk/CoreAdapters/FBAudienceAdapter
+    - avocarrot-ios-sdk/NativeView
+    - FBAudienceNetwork (~> 4.24)
+  - avocarrot-ios-sdk/NativeViewAdapters/GoogleMobileAdsAdapter (4.8.0):
+    - avocarrot-ios-sdk/CoreAdapters/GoogleMobileAdsAdapter
+    - avocarrot-ios-sdk/NativeView
+    - Google-Mobile-Ads-SDK (~> 7.21)
+  - avocarrot-ios-sdk/NativeViewAdapters/InLocoAdapter (4.8.0):
+    - avocarrot-ios-sdk/CoreAdapters/InLocoAdapter
+    - avocarrot-ios-sdk/NativeView
+    - InLocoMedia-Ads-SDK (~> 2.4)
+  - avocarrot-ios-sdk/NativeViewAdapters/MopubAdapter (4.8.0):
+    - avocarrot-ios-sdk/CoreAdapters/MopubAdapter
+    - avocarrot-ios-sdk/NativeView
+    - mopub-ios-sdk/Core (~> 4.13)
+  - avocarrot-ios-sdk/Vast (4.8.0):
+    - avocarrot-ios-sdk/Core
   - boost-for-react-native (1.63.0)
   - DoubleConversion (1.1.5)
+  - FBAudienceNetwork (4.27.2)
   - Folly (2016.09.26.00):
     - boost-for-react-native
     - DoubleConversion
     - glog
   - glog (0.3.4)
+  - Google-Mobile-Ads-SDK (7.29.0)
+  - InLocoMedia-Ads-SDK (2.4.4)
+  - mopub-ios-sdk/Core (4.20.0)
+  - React (0.54.0):
+    - React/Core (= 0.54.0)
   - React/Core (0.54.0):
     - yoga (= 0.54.0.React)
   - React/CxxBridge (0.54.0):
@@ -36,6 +89,12 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
+  - RNGlispaConnect (1.0.5):
+    - avocarrot-ios-sdk/Core
+    - avocarrot-ios-sdk/NativeAssets
+    - avocarrot-ios-sdk/NativeView
+    - avocarrot-ios-sdk/NativeViewAdapters
+    - React
   - yoga (0.54.0.React)
 
 DEPENDENCIES:
@@ -48,6 +107,7 @@ DEPENDENCIES:
   - React/RCTNetwork (from `../node_modules/react-native`)
   - React/RCTText (from `../node_modules/react-native`)
   - React/RCTWebSocket (from `../node_modules/react-native`)
+  - RNGlispaConnect (from `../node_modules/react-native-glispa-connect/ios`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 EXTERNAL SOURCES:
@@ -59,17 +119,26 @@ EXTERNAL SOURCES:
     :podspec: ../node_modules/react-native/third-party-podspecs/GLog.podspec
   React:
     :path: ../node_modules/react-native
+  RNGlispaConnect:
+    :path: ../node_modules/react-native-glispa-connect/ios
   yoga:
     :path: ../node_modules/react-native/ReactCommon/yoga
 
 SPEC CHECKSUMS:
+  AppLovinSDK: cbe12eb44732662b157b3fafa84066de0044ed8e
+  avocarrot-ios-sdk: 514c18e6368b2f1a39b8904d01f4de485ebf6e46
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   DoubleConversion: ebb6747c5b66026ad4f97b789c3ceac6f18e57a6
+  FBAudienceNetwork: 84fc420e262ae16b30586861fa11dd9c779336a8
   Folly: 211775e49d8da0ca658aebc8eab89d642935755c
   glog: 1de0bb937dccdc981596d3b5825ebfb765017ded
+  Google-Mobile-Ads-SDK: 375bbb821b3df2106c37b74f6b0a97576ddc5f6b
+  InLocoMedia-Ads-SDK: a3d30d51c67302015b1f0af6f696d69956c6650a
+  mopub-ios-sdk: 89c6ac9ca01d3b36e9fba16a6cfe31d3c290d354
   React: c237e42de9c70e5cac6eeb52b4cfd3a0910c1f00
+  RNGlispaConnect: d169060374fa0b7aff04f4d3e8fe13770063c6f7
   yoga: 55da126afc384965b96bff46652464373b330add
 
-PODFILE CHECKSUM: 089c31ca5d45b159d546b6f230583a0fecd5836f
+PODFILE CHECKSUM: 4721a36da4b66da5eb975063c198f16121815b69
 
 COCOAPODS: 1.4.0
